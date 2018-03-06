@@ -39,4 +39,17 @@ public class UserDaoImpl implements UserDao {
 		return null;
 	}
 
+	@Override
+	public int getCid(String username) {
+		String sql = "Select Cid from dbo.PropertyStaff where Pusername = ? ";
+		String[] params = new String[1];
+		params[0] = username;
+		int cid=0;
+		cid=(Integer) db.executeQuerySingle(sql, params);
+		if (cid!=0) {
+			return cid;
+		} else
+		return 0;
+	}
+
 }

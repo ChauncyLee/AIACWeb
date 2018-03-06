@@ -50,7 +50,7 @@ a:focus {
 }
 
 .nav>li>a {
-    color: #a7b1c2;
+    color: white;
     font-weight: 600;
     padding: 14px 20px 14px 25px;
 }
@@ -71,6 +71,7 @@ a:focus {
 .navbar-default .nav>li>a:hover,
 .navbar-default .nav>li>a:focus {
     background-color: #293846;
+    /*2088c9*/
     color: white;
 }
 
@@ -202,7 +203,7 @@ body.body-small .navbar-top-links li:last-child {
 
 .nav-header {
     padding: 33px 25px;
-    background: url("patterns/header-profile.png") no-repeat;
+    background:  url("patterns/header-profile.png") no-repeat;
 }
 
 .pace-done .nav-header {
@@ -228,7 +229,7 @@ body.body-small .navbar-top-links li:last-child {
 }
 
 .nav-header .text-muted {
-    color: #8095a8;
+    color: white;
 }
 
 .minimalize-styl-2 {
@@ -429,6 +430,7 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav-second-level {
 
 body.mini-navbar .navbar-default .nav>li>a {
     font-size: 16px;
+    
 }
 
 body.mini-navbar .logo-element {
@@ -3315,7 +3317,7 @@ a.forum-item-title:hover {
 body {
     font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
-    color: #676a6c;
+    color: #C5C1AA;
     overflow-x: hidden;
 }
 
@@ -7093,9 +7095,9 @@ body.rtls.top-navigation .footer.fixed {
     background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
 }
 
-.blue-skin:hover {
+/* .blue-skin:hover {
     background: #0d8ddb;
-}
+} */
 
 .yellow-skin {
     font-weight: 600;
@@ -7819,4 +7821,20 @@ body.skin-3 {
     opacity: 0.5;
     font-size: 20px;
     font-weight: 600;
+}
+.mybg{
+    background: url(../img/b2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.myclose{
+    margin-left:50%;
+    transform:translate(-50%,0);
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.mycenter{
+    margin-left:60%;
+    transform: translate(-50%, 0);
 }

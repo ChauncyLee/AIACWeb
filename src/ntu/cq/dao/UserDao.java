@@ -25,4 +25,11 @@ public interface UserDao {
      * @param username
      */
 	PropertyStaff getUserByUsername(String username);
+	
+	/**
+	 * 根据用户名获取该职工所在小区Cid
+	 * @param username
+	 * @return
+	 */
+	int getCid(String username);
 }

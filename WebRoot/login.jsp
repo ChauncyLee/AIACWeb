@@ -5,10 +5,8 @@
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-
 <head>
 <base href="<%=basePath%>">
 <meta charset="utf-8">
@@ -17,10 +15,9 @@
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
-<title>H+ 后台主题UI框架 - 登录</title>
-<meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-<meta name="description"
-	content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+<title>智慧门禁 - 登录</title>
+<meta name="keywords" content="智慧门禁，简单生活">
+<meta name="description" content="智慧门禁采用人脸识别技术，简单你的生活">
 
 <link rel="shortcut icon" href="favicon.ico">
 <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
@@ -38,17 +35,16 @@
 </script>
 </head>
 
-<body class="gray-bg">
+<body class="gray-bg mybg">
 
 	<div class="middle-box text-center loginscreen  animated fadeInDown">
 		<div>
 			<div>
 
-				<h1 class="logo-name">H+</h1>
+				<h1 class="logo-name">D+</h1>
 
 			</div>
-			<h3>欢迎使用 H+</h3>
-
+			<h3>欢迎使用 D+</h3>
 
 			<form class="m-t" role="form" action="servlet/LoginServlet?"
 				method="post">
@@ -63,12 +59,13 @@
 				<input type="submit" value="登录" id="sub_btn"
 					class="btn btn-primary block full-width m-b" />
 
+
 				<p class="text-muted text-center">
 					<a href="login.jsp#"><small>忘记密码了？</small></a> | <a
 						href="register.jsp">注册一个新账号</a>
 				</p>
-				<span  style="color:#F00" class="errorMsg"><%=request.getAttribute("msg") == null ? ""
-					: request.getAttribute("msg")%></span>
+				<span style="color:#F00" class="errorMsg"><%=request.getAttribute("msg") == null ? "" : request
+					.getAttribute("msg")%></span>
 
 			</form>
 		</div>

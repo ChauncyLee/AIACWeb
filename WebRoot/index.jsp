@@ -13,19 +13,11 @@
 <base href="<%=basePath%>">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
-<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
-<meta charset="utf-8">
-<meta name="renderer" content="webkit">
-
 <title>智慧门禁-主页</title>
 
 <meta name="keywords" content="智慧门禁，简单出行">
@@ -45,10 +37,9 @@
 <body class="fixed-sidebar full-height-layout gray-bg"
 	style="overflow:hidden">
 	<div id="wrapper">
-
-
 		<!--左侧导航开始-->
-		<nav class="navbar-default navbar-static-side" role="navigation">
+		<nav class="navbar-default navbar-static-side"
+			style="background:rgba(32,136,201,0.8);" role="navigation">
 		<div class="nav-close">
 			<i class="fa fa-times-circle"></i>
 		</div>
@@ -67,41 +58,45 @@
 						</span>
 						</a>
 						<ul class="dropdown-menu animated fadeInRight m-t-xs">
-							<li><a class="J_menuItem" href="form_avatar.jsp">修改头像</a></li>
-							<li><a class="J_menuItem" href="profile.jsp">个人资料</a></li>
+							<li><a class="J_menuItem" href="form_avatar.html">修改头像</a></li>
+							<li><a class="J_menuItem" href="profile.html">个人资料</a></li>
 							<li class="divider"></li>
-							<li><a href="servlet/ExitServlet">安全退出</a></li>
+							<li><a href="login.html">安全退出</a></li>
 						</ul>
 					</div>
 				</li>
-
-
-				<li><a class="J_menuItem" href="users.jsp"> <i
-						class="fa fa-home"></i> <span class="nav-label">住户管理</span>
+				<li><a class="J_menuItem" href="index_v3.jsp"> <i
+						class="fa fa-home"></i> <span class="nav-label">首页</span>
 				</a></li>
+				<li><a class="J_menuItem"> <i
+						class="fa fa-columns"></i> <span class="nav-label">住户管理</span> <span
+						class="fa arrow"></span>
+				</a>
+					<ul class="nav nav-second-level">
+						<li><a class="J_menuItem" href="servlet/BuildingSearchServlet">住户信息</a></li>
+						<li><a class="J_menuItem" href="addpeople.html"
+							data-index="0">添加用户</a></li>
+						<li><a class="J_menuItem" href="addbulid.html">添加楼栋</a></li>
+					</ul></li>
+				<li><a class="J_menuItem" > <i
+						class="fa fa-magic"></i> <span class="nav-label">门禁管理</span> <span
+						class="fa arrow"></span>
+				</a>
+					<ul class="nav nav-second-level">
+					<li><a class="J_menuItem" href="camel.html" data-index="0">门禁信息</a>
+						</li>
+						<li><a class="J_menuItem" href="adddoor.html" data-index="0">添加门禁</a>
+						</li>
 
-
-				<li><a class="J_menuItem" href="bulids.jsp"> <i
-						class="fa fa-columns"></i> <span class="nav-label">楼层管理</span>
-				</a></li>
-
-
-				<li><a class="J_menuItem" href="camel.jsp"> <i
-						class="fa fa-magic"></i> <span class="nav-label">门禁管理</span>
-				</a></li>
-
-
-				<li><a class="J_menuItem" href="timeline.jsp"> <i
+					</ul></li>
+				<li><a class="J_menuItem" href="timeline.html"> <i
 						class="fa fa-table"></i> <span class="nav-label">进出情况</span>
 				</a></li>
 
-
-				<li><a class="J_menuItem" href="request.jsp"> <i
+				<li><a class="J_menuItem" href="request.html"> <i
 						class="fa fa-envelope"></i> <span class="nav-label">申请情况</span>
 				</a></li>
-
-
-				<li><a class="J_menuItem" href="faq.jsp"> <i
+				<li><a class="J_menuItem" href="faq.html"> <i
 						class="fa fa-flask"></i> <span class="nav-label">寻求帮助</span>
 				</a></li>
 
@@ -109,8 +104,6 @@
 		</div>
 		</nav>
 		<!--左侧导航结束-->
-
-
 		<!--右侧部分开始-->
 		<div id="page-wrapper" class="gray-bg dashbard-1">
 			<div class="row border-bottom">
@@ -123,7 +116,7 @@
 						href="#"> <i class="fa fa-bars"></i>
 					</a>
 					<form role="search" class="navbar-form-custom" method="post"
-						action="search_results.jsp">
+						action="search_results.html">
 						<div class="form-group">
 							<input type="text" placeholder="请输入您需要查找的内容 …"
 								class="form-control" name="top-search" id="top-search">
@@ -138,7 +131,7 @@
 						<ul class="dropdown-menu dropdown-messages">
 							<li class="m-t-xs">
 								<div class="dropdown-messages-box">
-									<a href="profile.jsp" class="pull-left"> <img alt="image"
+									<a href="profile.html" class="pull-left"> <img alt="image"
 										class="img-circle" src="img/a7.jpg">
 									</a>
 									<div class="media-body">
@@ -152,7 +145,7 @@
 							<li class="divider"></li>
 							<li>
 								<div class="dropdown-messages-box">
-									<a href="profile.jsp" class="pull-left"> <img alt="image"
+									<a href="profile.html" class="pull-left"> <img alt="image"
 										class="img-circle" src="img/a4.jpg">
 									</a>
 									<div class="media-body ">
@@ -165,39 +158,13 @@
 							<li class="divider"></li>
 							<li>
 								<div class="text-center link-block">
-									<a class="J_menuItem" href="mailbox.jsp"> <i
+									<a class="J_menuItem" href="mailbox.html"> <i
 										class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
 									</a>
 								</div>
 							</li>
 						</ul></li>
-					<li class="dropdown"><a class="dropdown-toggle count-info"
-						data-toggle="dropdown" href="#"> <i class="fa fa-bell"></i> <span
-							class="label label-primary">8</span>
-					</a>
-						<ul class="dropdown-menu dropdown-alerts">
-							<li><a href="mailbox.jsp">
-									<div>
-										<i class="fa fa-envelope fa-fw"></i> 您有3条未读消息 <span
-											class="pull-right text-muted small">4分钟前</span>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li><a href="profile.jsp">
-									<div>
-										<i class="fa fa-qq fa-fw"></i> 8条新回复 <span
-											class="pull-right text-muted small">12分钟前</span>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li>
-								<div class="text-center link-block">
-									<a class="J_menuItem" href="notifications.jsp"> <strong>查看所有
-									</strong> <i class="fa fa-angle-right"></i>
-									</a>
-								</div>
-							</li>
-						</ul></li>
+
 
 					<li class="dropdown hidden-xs"><a class="right-sidebar-toggle"
 						aria-expanded="false"> <i class="fa fa-tasks"></i> 主题
@@ -230,8 +197,8 @@
 						<li class="J_tabCloseOther"><a>关闭其他选项卡</a></li>
 					</ul>
 				</div>
-				<a href="servlet/ExitServlet" class="roll-nav roll-right J_tabExit"> <i
-					class="fa fa fa-sign-out"></i> 退出
+				<a href="servlet/ExitServlet" class="roll-nav roll-right J_tabExit">
+					<i class="fa fa fa-sign-out"></i> 退出
 				</a>
 			</div>
 			<div class="row J_mainContent" id="content-main">
@@ -313,16 +280,17 @@
 								</div>
 							</div>
 							<div class="title">皮肤选择</div>
-							<div class="setings-item default-skin nb">
-								<span class="skin-name "> <a href="#" class="s-skin-0">
+							<div class="setings-item  nb default-skin">
+								<span class="skin-name "> <a href="#" class="s-skin-1">
 										默认皮肤 </a>
 								</span>
 							</div>
-							<div class="setings-item blue-skin nb">
-								<span class="skin-name "> <a href="#" class="s-skin-1">
-										蓝色主题 </a>
+							<div class="setings-item  blue-skin nb">
+								<span class="skin-name "> <a href="#" class="s-skin-0">
+										黑色主题 </a>
 								</span>
 							</div>
+
 							<div class="setings-item yellow-skin nb">
 								<span class="skin-name "> <a href="#" class="s-skin-3">
 										黄色/紫色主题 </a>

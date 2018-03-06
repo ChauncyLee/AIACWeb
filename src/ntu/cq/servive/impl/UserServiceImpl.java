@@ -28,4 +28,9 @@ public class UserServiceImpl implements UserService {
 		return false;
 	}
 
+	@Override
+	public int getCid(String username) {
+		return userDao.getCid(username);
+	}
+
 }

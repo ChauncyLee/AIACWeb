@@ -23,4 +23,11 @@ public interface UserService {
      * @return
      */
     boolean checkUsername(String username);
+    
+    /**
+     * 根据用户名获取该职工所在小区
+     * @param username
+     * @return
+     */
+    int getCid(String username);
 }

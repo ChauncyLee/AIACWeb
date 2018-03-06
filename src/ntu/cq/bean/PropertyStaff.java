@@ -2,19 +2,19 @@ package ntu.cq.bean;
 
 public class PropertyStaff {
 
-	private String Pid;
+	private int Pid;
 	private String Pname;
 	private String Pgender;
 	private String Pstaffno;
 	private String Ptel;
-	private String RRid;
+	private int RRid;
 	private String Pusername;
 	private String Ppassword;
 
 	
 	
-	public PropertyStaff(String pid, String pname, String pgender,
-			String pstaffno, String ptel, String rRid, String pusername,
+	public PropertyStaff(int pid, String pname, String pgender,
+			String pstaffno, String ptel, int rRid, String pusername,
 			String ppassword) {
 		super();
 		Pid = pid;
@@ -28,19 +28,19 @@ public class PropertyStaff {
 	}
 	public PropertyStaff() {
 		super();
-		Pid = "";
+		Pid = 0;
 		Pname = "";
 		Pgender = "";
 		Pstaffno = "";
 		Ptel = "";
-		RRid = "";
+		RRid = 0;
 		Pusername = "";
 		Ppassword = "";
 	}
-	public String getPid() {
+	public int getPid() {
 		return Pid;
 	}
-	public void setPid(String pid) {
+	public void setPid(int pid) {
 		Pid = pid;
 	}
 	public String getPname() {
@@ -67,10 +67,10 @@ public class PropertyStaff {
 	public void setPtel(String ptel) {
 		Ptel = ptel;
 	}
-	public String getRRid() {
+	public int getRRid() {
 		return RRid;
 	}
-	public void setRRid(String rRid) {
+	public void setRRid(int rRid) {
 		RRid = rRid;
 	}
 	public String getUsername() {

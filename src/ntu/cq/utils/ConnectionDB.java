@@ -125,7 +125,7 @@ public class ConnectionDB {
      * @param params 参数数组，若没有参数则为null 
      * @return 结果集 
      */  
-    private ResultSet executeQueryRS(String sql, Object[] params) {  
+    public ResultSet executeQueryRS(String sql, Object[] params) {  
         try {  
             // 获得连接  
             connnection = this.getConnection();  
@@ -178,9 +178,6 @@ public class ConnectionDB {
             if(resultSet.next()) {  
             	
                 object = resultSet.getObject(1);  
-                System.out.println("测试1："+resultSet.getString(7));
-                System.out.println("测试2："+resultSet.getString("Ptel"));
-               
             }  
               
         } catch (SQLException e) {  
