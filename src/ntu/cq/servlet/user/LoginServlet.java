@@ -2,6 +2,7 @@ package ntu.cq.servlet.user;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import ntu.cq.bean.PropertyStaff;
 import ntu.cq.bean.User;
 import ntu.cq.servive.UserService;
 import ntu.cq.servive.impl.UserServiceImpl;
@@ -82,17 +84,26 @@ public class LoginServlet extends HttpServlet {
 				MD5Tools.getPwd(password));
 
 		if (loginUser) {
-			int cid = userService.getCid(username);
-			if (cid != 0) {
-				session.setAttribute("username", username);
-				session.setAttribute("cid", cid);
-				response.sendRedirect(request.getContextPath() + "/index.jsp");
-			}else{
-				// 登录失败，设置一个错误消息，用户名和密码错误
-				request.setAttribute("msg", "您的账号出现异常，请联系管理员进行处理");
-				request.getRequestDispatcher("/login.jsp").forward(request,
-						response);
+			PropertyStaff p = null;
+			try {
+				p = userService.getCid(username);
+				if (!p.equals(null)) {
+					session.setAttribute("username", username);
+					session.setAttribute("cid", p.getCid());
+					session.setAttribute("Pname", p.getPname());
+					session.setAttribute("RRid", p.getRRid());
+					response.sendRedirect(request.getContextPath() + "/index.jsp");
+				}else{
+					// 登录失败，设置一个错误消息，用户名和密码错误
+					request.setAttribute("msg", "您的账号出现异常，请联系管理员进行处理");
+					request.getRequestDispatcher("/login.jsp").forward(request,
+							response);
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+			
 
 		} else {
 			// 登录失败，设置一个错误消息，用户名和密码错误

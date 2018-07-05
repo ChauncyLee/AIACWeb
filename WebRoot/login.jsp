@@ -44,7 +44,7 @@
 				<h1 class="logo-name">D+</h1>
 
 			</div>
-			<h3>欢迎使用 D+</h3>
+			<h3>欢迎使用 FaceAC后台管理系统</h3>
 
 			<form class="m-t" role="form" action="servlet/LoginServlet?"
 				method="post">

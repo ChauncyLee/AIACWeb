@@ -1,7 +1,10 @@
 package ntu.cq.servive;
 
+import java.sql.SQLException;
+
 import ntu.cq.bean.PropertyStaff;
-import ntu.cq.bean.User;
+import ntu.cq.bean.Resident;
+import ntu.cq.bean.Visitor;
 
 public interface UserService {
 	/**
@@ -25,9 +28,34 @@ public interface UserService {
     boolean checkUsername(String username);
     
     /**
-     * 根据用户名获取该职工所在小区
+     * 根据用户名获取该职工个人信息
      * @param username
      * @return
+     * @throws SQLException 
      */
-    int getCid(String username);
+    PropertyStaff getCid(String username) throws SQLException;
+    
+    /**
+     * 将访客添加进去，返回受影响的行数
+     * @param v
+     * @return
+     * @throws SQLException 
+     */
+    int registVisitor(Visitor v) throws SQLException;
+    
+    /**
+     * 将住户添加进去，返回受影响的行数
+     * @param r
+     * @return
+     * @throws SQLException 
+     */
+    int registResident(Resident r) throws SQLException;
+    
+    /**
+     * 通过uname查询特征值Uid
+     * @param uname
+     * @return
+     * @throws SQLException 
+     */
+    int getUid(String uname) throws SQLException;
 }

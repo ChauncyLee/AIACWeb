@@ -48,7 +48,7 @@
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq1"
-								class="faq-question">如何添加删除住户</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何删除住户</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
@@ -65,7 +65,7 @@
 						<div class="col-sm-12">
 							<div id="faq1" class="panel-collapse collapse faq-answer">
 								<p>
-									在楼栋管理页面，点击该用户所在的楼栋找到该用户，点击删除 <br>在住户管理页面找到住户，删除
+									打开住户管理页面，点击住户信息，从楼栋信息里找到住户，点击住户的门牌号信息，按下删除住户选项。
 								</p>
 							</div>
 						</div>
@@ -75,7 +75,7 @@
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq2"
-								class="faq-question">如何删除添加楼栋</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何添加住户</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
@@ -92,8 +92,7 @@
 						<div class="col-sm-12">
 							<div id="faq2" class="panel-collapse collapse faq-answer">
 								<p>
-									在楼栋管理页面 <br>添加删除楼栋 <br>B、手机端，打开天猫客户端
-									>点击右下方“我”>点击“我的资产”。
+									打开住户管理页面，点击添加住户就可以添加住户信息。
 								</p>
 							</div>
 						</div>
@@ -103,13 +102,13 @@
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq3"
-								class="faq-question">天猫宝转出入口在哪里？</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何添加楼栋</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
+							<span class="small font-bold">楼栋</span>
 							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
+								<span class="tag-item">信息</span> <span class="tag-item">理财</span>
 							</div>
 						</div>
 						<div class="col-md-2 text-right">
@@ -119,7 +118,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div id="faq3" class="panel-collapse collapse faq-answer">
-								<p>天猫宝的金额随时可以转出，但转出时天猫将收取转出金额1%的违约金，转出时仅能转出到余额宝；</p>
+								<p>打开住户管理页面，点击添加楼栋就可以添加楼栋信息。</p>
 							</div>
 						</div>
 					</div>
@@ -128,38 +127,33 @@
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq4"
-								class="faq-question">“天猫宝”支持哪些订单？</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何查看是否有陌生人进入
+</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
+							<span class="small font-bold">查看</span>
 							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
+								<span class="tag-item">陌生人</span> <span class="tag-item">理财</span>
 							</div>
 						</div>
 						<div class="col-md-2 text-right">
 							<span class="small font-bold">投票 </span> <br />65
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div id="faq4" class="panel-collapse collapse faq-answer">
-								<p>天猫宝仅支持在天猫消费（包含天猫超市订单、天猫国际订单及电器城订单），未来还可支持在天猫指定的线下商家处消费。</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 				<div class="faq-item">
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq5"
-								class="faq-question">天猫宝支持话费充值吗？</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何查看住户访客的进入</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
+							<span class="small font-bold">查看</span>
 							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
+								<span class="tag-item">访客</span> <span class="tag-item">理财</span>
 							</div>
 						</div>
 						<div class="col-md-2 text-right">
@@ -169,7 +163,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div id="faq5" class="panel-collapse collapse faq-answer">
-								<p>很抱歉，天猫宝暂不支持话费充值。</p>
+								<p>打开出入管理页面，点击进出情况，就可以清晰看见何时何门禁出住户访客的进出情况。</p>
 							</div>
 						</div>
 					</div>
@@ -178,13 +172,13 @@
 					<div class="row">
 						<div class="col-md-7">
 							<a data-toggle="collapse" href="faq.html#faq6"
-								class="faq-question">天猫宝支持淘宝旅行商品吗？</a> <small><strong>智慧门禁</strong>
+								class="faq-question">如何改变门禁开关状态</a> <small><strong>智慧门禁</strong>
 								<i class="fa fa-clock-o"></i> 今天15:34</small>
 						</div>
 						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
+							<span class="small font-bold">门禁</span>
 							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
+								<span class="tag-item">开关</span> <span class="tag-item">理财</span>
 							</div>
 						</div>
 						<div class="col-md-2 text-right">
@@ -194,88 +188,14 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div id="faq6" class="panel-collapse collapse faq-answer">
-								<p>天猫宝支持淘宝旅行商品，但仅限天猫店铺。</p>
+								<p>打开门禁管理页面，点击门禁信息，选择门禁，点击切换状态。</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="faq-item">
-					<div class="row">
-						<div class="col-md-7">
-							<a data-toggle="collapse" href="faq.html#faq7"
-								class="faq-question"> 天猫宝充值支持哪些方式</a> <small><strong>智慧门禁</strong>
-								<i class="fa fa-clock-o"></i> 今天15:34</small>
-						</div>
-						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
-							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
-							</div>
-						</div>
-						<div class="col-md-2 text-right">
-							<span class="small font-bold">投票 </span> <br />64
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div id="faq7" class="panel-collapse collapse faq-answer">
-								<p>目前天猫宝仅支持储蓄卡和支付宝账户余额充值。余额宝、信用卡等暂不支持。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="faq-item">
-					<div class="row">
-						<div class="col-md-7">
-							<a data-toggle="collapse" href="faq.html#faq8"
-								class="faq-question">天猫宝可以还信用卡吗？</a> <small><strong>智慧门禁</strong>
-								<i class="fa fa-clock-o"></i> 今天15:34</small>
-						</div>
-						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
-							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
-							</div>
-						</div>
-						<div class="col-md-2 text-right">
-							<span class="small font-bold">投票 </span> <br />10
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div id="faq8" class="panel-collapse collapse faq-answer">
-								<p>很抱歉，天猫宝中的资金只能用于天猫购物消费（包含天猫超市订单、天猫国际订单及电器城订单），无法支持信用卡还款。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="faq-item">
-					<div class="row">
-						<div class="col-md-7">
-							<a data-toggle="collapse" href="faq.html#faq9"
-								class="faq-question">如何使用天猫宝付款？</a> <small><strong>智慧门禁</strong>
-								<i class="fa fa-clock-o"></i> 今天15:34</small>
-						</div>
-						<div class="col-md-3">
-							<span class="small font-bold">天猫</span>
-							<div class="tag-list">
-								<span class="tag-item">天猫宝</span> <span class="tag-item">理财</span>
-							</div>
-						</div>
-						<div class="col-md-2 text-right">
-							<span class="small font-bold">投票 </span> <br />23
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div id="faq9" class="panel-collapse collapse faq-answer">
-								<p>
-									只要天猫宝资金余额>0, 在收银台（支付宝付款页面）就可以勾选天猫宝进行支付。 <br>ps：天猫宝仅支持在天猫消费（包含天猫超市订单、天猫国际订单及电器城订单），暂不支持：虚拟类商品（机票、酒店、旅游除外）、保险和理财、天猫分期订单、先试后买订单、预授权订单、使用了快捷送运费险的订单、信用卡分期付款订单；组合支付任意一笔中含前述订单也不能使用。
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+	
+				
+				
 			</div>
 		</div>
 	</div>

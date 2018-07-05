@@ -1,8 +1,10 @@
 <%@ page language="java" import="java.util.*,ntu.cq.bean.House"
 	pageEncoding="utf-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -27,10 +29,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <link href="css/animate.css" rel="stylesheet">
 <link href="css/style.css?v=4.1.0" rel="stylesheet">
 <%
-    	List<House> list=new ArrayList<House>();
-    	list=(ArrayList<House>)request.getAttribute("list");
-    	String status="";
-     %>
+	List<House> list = new ArrayList<House>();
+	list = (ArrayList<House>) request.getAttribute("list");
+	String status = "";
+%>
 </head>
 
 <body class="gray-bg">
@@ -42,30 +44,38 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 				</div>
 				<div class="ibox-content">
-					<p>绿色为有住户，灰色为无人居住，黄色为出租</p>
+					<p>绿色为有住户，灰色为无人居住，黄色为出租，红色为有未上传照片人员</p>
 
-					<!-- U-btn-default：灰色；L-btn-primary：绿色；R-btn-warning：黄色 -->
+					<!-- U-btn-default：灰色；L-btn-primary：绿色；R-btn-warning：黄色 ； btn-danger：红色-->
 					<p>
 						<%
-                    	for(int i=0;i<list.size();i++){
-                    	House house = list.get(i);
-                    	if(house.getHstatus().equals("L")){
-                    		status="btn-primary";
-                    	}else if(house.getHstatus().equals("U")){
-                    		status="btn-default";
-                    	}else if(house.getHstatus().equals("R")){
-                    		status="btn-warning";
-                    	}
-                     %>
-						<button type="button" class="btn btn-w-m <%=status %>">
-							<a href="care.html"><%=house.getHaddr() %></a>
+							for (int i = 0; i < list.size(); i++) {
+								House house = list.get(i);
+								if (house.getHstatus().equals("L")) {
+								if(i==3)
+									status = "btn-danger";
+									else
+									status = "btn-primary";
+								} else if (house.getHstatus().equals("U")) {
+									status = "btn-default";
+								} else if (house.getHstatus().equals("R")) {
+									status = "btn-warning";
+								}
+						%>
+						<button type="button" class="btn btn-w-m <%=status%>"
+							onclick="<%=house.getHstatus().equals("U") ? ""
+						: "javascrtpt:window.location.href='servlet/ViewResidentServlet?hid="
+								+ String.valueOf(house.getHid()) + "&flag=db"%>'">
+							<%=house.getHaddr()%>
 						</button>
-						<%} %>
+						<%
+							}
+						%>
 					</p>
 				</div>
 			</div>
 		</div>
-
+		
 
 	</div>
 

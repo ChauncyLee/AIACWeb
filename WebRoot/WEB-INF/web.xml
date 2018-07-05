@@ -39,6 +39,160 @@
     <servlet-name>BuildingInfoServlet</servlet-name>
     <servlet-class>ntu.cq.servlet.building.BuildingInfoServlet</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewResidentServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.ViewResidentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ToDoorControl</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.ToDoorControl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBnameServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.building.GetBnameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBuildingNumServiet</servlet-name>
+    <servlet-class>ntu.cq.servlet.building.GetBuildingNumServiet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetHouseByBid</servlet-name>
+    <servlet-class>ntu.cq.servlet.house.GetHouseByBid</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileUpload</servlet-name>
+    <servlet-class>ntu.cq.servlet.user.FileUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IfBuildingServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.building.IfBuildingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddBuilding</servlet-name>
+    <servlet-class>ntu.cq.servlet.building.AddBuilding</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeDoorStatus</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.ChangeDoorStatus</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDoor</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.AddDoor</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IfDoorServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.IfDoorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TimeLineServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.TimeLineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoorRecord</servlet-name>
+    <servlet-class>ntu.cq.servlet.building.DoorRecord</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DTimeLineServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.door.DTimeLineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Rinfo</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.Rinfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewVisiterServlet</servlet-name>
+    <servlet-class>ntu.cq.servlet.visitor.ViewVisiterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteResident</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.DeleteResident</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateResident</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.UpdateResident</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmUpdater</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.ConfirmUpdater</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteVisite</servlet-name>
+    <servlet-class>ntu.cq.servlet.visitor.DeleteVisite</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPeople</servlet-name>
+    <servlet-class>ntu.cq.servlet.user.AddPeople</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ToUp</servlet-name>
+    <servlet-class>ntu.cq.servlet.resident.ToUp</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -69,8 +223,166 @@
     <servlet-name>BuildingInfoServlet</servlet-name>
     <url-pattern>/servlet/BuildingInfoServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewResidentServlet</servlet-name>
+    <url-pattern>/servlet/ViewResidentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToDoorControl</servlet-name>
+    <url-pattern>/servlet/ToDoorControl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBnameServlet</servlet-name>
+    <url-pattern>/servlet/GetBnameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBuildingNumServiet</servlet-name>
+    <url-pattern>/servlet/GetBuildingNumServiet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetHouseByBid</servlet-name>
+    <url-pattern>/servlet/GetHouseByBid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUpload</servlet-name>
+    <url-pattern>/servlet/FileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IfBuildingServlet</servlet-name>
+    <url-pattern>/servlet/IfBuildingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBuilding</servlet-name>
+    <url-pattern>/servlet/AddBuilding</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeDoorStatus</servlet-name>
+    <url-pattern>/servlet/ChangeDoorStatus</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDoor</servlet-name>
+    <url-pattern>/servlet/AddDoor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IfDoorServlet</servlet-name>
+    <url-pattern>/servlet/IfDoorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TimeLineServlet</servlet-name>
+    <url-pattern>/servlet/TimeLineServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoorRecord</servlet-name>
+    <url-pattern>/servlet/DoorRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DTimeLineServlet</servlet-name>
+    <url-pattern>/servlet/DTimeLineServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Rinfo</servlet-name>
+    <url-pattern>/servlet/Rinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewVisiterServlet</servlet-name>
+    <url-pattern>/servlet/ViewVisiterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteResident</servlet-name>
+    <url-pattern>/servlet/DeleteResident</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateResident</servlet-name>
+    <url-pattern>/servlet/UpdateResident</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmUpdater</servlet-name>
+    <url-pattern>/servlet/ConfirmUpdater</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteVisite</servlet-name>
+    <url-pattern>/servlet/DeleteVisite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPeople</servlet-name>
+    <url-pattern>/servlet/AddPeople</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToUp</servlet-name>
+    <url-pattern>/servlet/ToUp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.test.servlet.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUnameRe</servlet-name>
+    <servlet-class>ntu.cq.servlet.arcfeature.GetUnameRe</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStranger</servlet-name>
+    <servlet-class>ntu.cq.servlet.stranger.ViewStranger</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ToExamine</servlet-name>
+    <servlet-class>ntu.cq.servlet.user.ToExamine</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmApply</servlet-name>
+    <servlet-class>ntu.cq.servlet.user.ConfirmApply</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ToIndex</servlet-name>
+    <servlet-class>ntu.cq.servlet.user.ToIndex</servlet-class>
+  </servlet>
 
 
+
+
+
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/VerifyCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUnameRe</servlet-name>
+    <url-pattern>/servlet/GetUnameRe</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStranger</servlet-name>
+    <url-pattern>/servlet/ViewStranger</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToExamine</servlet-name>
+    <url-pattern>/servlet/ToExamine</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmApply</servlet-name>
+    <url-pattern>/servlet/ConfirmApply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToIndex</servlet-name>
+    <url-pattern>/servlet/ToIndex</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <description>Spring监听器</description>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
  <filter>
    <filter-name>check</filter-name>
    <filter-class>ntu.cq.filter.CheckUserFilter</filter-class>
@@ -80,5 +392,7 @@
 	 <url-pattern>/*</url-pattern>
   </filter-mapping>
 
-
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

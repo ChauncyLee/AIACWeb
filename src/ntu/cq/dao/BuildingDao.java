@@ -30,4 +30,28 @@ public interface BuildingDao {
 	 * @throws SQLException 
 	 */
 	List<House>  getBuildingInfo(int Bid) throws SQLException;
+	
+	/**
+	 * 由Cid获取该小区所有楼栋的名字
+	 * @param Cid
+	 * @return
+	 * @throws SQLException 
+	 */
+	List<Building> getBname(int Cid) throws SQLException;
+	
+	/**
+	 * 将新添加的Building添加到数据库，添加成功返回受影响的行数
+	 * @param addBuilding
+	 * @return
+	 */
+	int addBuilding(Building addBuilding);
+	
+	/**
+	 * 将新添加的Building添加该楼栋的房间
+	 * @param list
+	 * @return
+	 */
+	int addHouse(List<House> list);
+	
+	
 }

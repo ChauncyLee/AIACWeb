@@ -9,7 +9,8 @@ public class PropertyStaff {
 	private String Ptel;
 	private int RRid;
 	private String Pusername;
-	private String Ppassword;
+	private String Password;
+	private int Cid;
 
 	
 	
@@ -24,7 +25,6 @@ public class PropertyStaff {
 		Ptel = ptel;
 		RRid = rRid;
 		Pusername = pusername;
-		Ppassword = ppassword;
 	}
 	public PropertyStaff() {
 		super();
@@ -35,7 +35,6 @@ public class PropertyStaff {
 		Ptel = "";
 		RRid = 0;
 		Pusername = "";
-		Ppassword = "";
 	}
 	public int getPid() {
 		return Pid;
@@ -79,11 +78,17 @@ public class PropertyStaff {
 	public void setUsername(String username) {
 		this.Pusername = username;
 	}
+	public int getCid() {
+		return Cid;
+	}
+	public void setCid(int cid) {
+		Cid = cid;
+	}
 	public String getPassword() {
-		return Ppassword;
+		return Password;
 	}
 	public void setPassword(String password) {
-		this.Ppassword = password;
+		Password = password;
 	}
 	
 	

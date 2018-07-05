@@ -25,5 +25,20 @@ public class BuildingServiceImpl implements BuildingService {
 	public List<House>  getBuildingInfo(int Bid) throws SQLException {
 		return bd.getBuildingInfo(Bid);
 	}
+	@Override
+	public List<Building> getBname(int Cid) throws SQLException {
+		// TODO Auto-generated method stub
+		return bd.getBname(Cid);
+	}
+	@Override
+	public int addBuilding(Building addBuilding) {
+		// TODO Auto-generated method stub
+		return bd.addBuilding(addBuilding);
+	}
+	@Override
+	public int addHouse(List<House> list) {
+		// TODO Auto-generated method stub
+		return bd.addHouse(list);
+	}
 
 }

@@ -1,6 +1,6 @@
 jQuery(function() {
     var $ = jQuery,    // just in case. Make sure it's not an other libaray.
-
+    
         $wrap = $('#uploader'),
 
         // 图片容器
@@ -59,7 +59,7 @@ jQuery(function() {
         alert( 'Web Uploader 不支持您的浏览器！如果你使用的是IE浏览器，请尝试升级 flash 播放器');
         throw new Error( 'WebUploader does not support the browser you are using.' );
     }
-
+    
     // 实例化
     uploader = WebUploader.create({
         pick: {
@@ -81,11 +81,12 @@ jQuery(function() {
         disableGlobalDnd: true,
 
         chunked: true,
-        // server: 'http://webuploader.duapp.com/server/fileupload.php',
-        server: 'http://2betop.net/fileupload.php',
+        server: 'servlet/UploadServlet?flag='+flag.innerText+'&id='+id.innerText+'&uname='+uname.innerText,
+        method:	'POST',
+        thread: 50,
         fileNumLimit: 300,
-        fileSizeLimit: 5 * 1024 * 1024,    // 200 M
-        fileSingleSizeLimit: 1 * 1024 * 1024    // 50 M
+        fileSizeLimit: 5 * 1024 * 1024,    // 50 M
+        fileSingleSizeLimit: 1 * 1024 * 1024    // 1 M
     });
 
     // 添加“添加文件”的按钮，
@@ -261,6 +262,9 @@ jQuery(function() {
         updateStatus();
     }
 
+    /**
+     * 上传状态
+     */
     function updateStatus() {
         var text = '', stats;
 
@@ -270,8 +274,8 @@ jQuery(function() {
         } else if ( state === 'confirm' ) {
             stats = uploader.getStats();
             if ( stats.uploadFailNum ) {
-                text = '已成功上传' + stats.successNum+ '张照片至XX相册，'+
-                    stats.uploadFailNum + '张照片上传失败，<a class="retry" href="#">重新上传</a>失败图片或<a class="ignore" href="#">忽略</a>'
+                text = '已成功上传' + stats.successNum+ '张照片至云端记忆中心，'+
+                    stats.uploadFailNum + '张照片上传失败，<a class="ignore" href="javascript:history.back();">返回</a>'
             }
 
         } else {
@@ -288,6 +292,9 @@ jQuery(function() {
         $info.html( text );
     }
 
+    /**
+     * 上传
+     */
     function setState( val ) {
         var file, stats;
 
@@ -353,6 +360,9 @@ jQuery(function() {
         updateStatus();
     }
 
+    /**
+     * 
+     */
     uploader.onUploadProgress = function( file, percentage ) {
         var $li = $('#'+file.id),
             $percent = $li.find('.progress span');
@@ -362,6 +372,9 @@ jQuery(function() {
         updateTotalProgress();
     };
 
+    /**
+     * 
+     */
     uploader.onFileQueued = function( file ) {
         fileCount++;
         fileSize += file.size;
@@ -376,6 +389,9 @@ jQuery(function() {
         updateTotalProgress();
     };
 
+    /**
+     * 
+     */
     uploader.onFileDequeued = function( file ) {
         fileCount--;
         fileSize -= file.size;
@@ -389,6 +405,9 @@ jQuery(function() {
 
     };
 
+    /**
+     * 
+     */
     uploader.on( 'all', function( type ) {
         var stats;
         switch( type ) {
@@ -407,10 +426,16 @@ jQuery(function() {
         }
     });
 
+    /**
+     * 
+     */
     uploader.onError = function( code ) {
         alert( 'Eroor: ' + code );
     };
 
+    /**
+     * 
+     */
     $upload.on('click', function() {
         if ( $(this).hasClass( 'disabled' ) ) {
             return false;
@@ -425,14 +450,23 @@ jQuery(function() {
         }
     });
 
+    /**
+     * 
+     */
     $info.on( 'click', '.retry', function() {
         uploader.retry();
     } );
 
+    /**
+     * 
+     */
     $info.on( 'click', '.ignore', function() {
         alert( 'todo' );
     } );
 
+    /**
+     * 
+     */
     $upload.addClass( 'state-' + state );
     updateTotalProgress();
 });

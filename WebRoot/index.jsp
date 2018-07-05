@@ -51,52 +51,52 @@
 							src="img/profile_small.jpg" />
 						</span> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <span
 							class="clear"> <span class="block m-t-xs"> <strong
-									class="font-bold">Beaut-zihan</strong>
-							</span> <span class="text-muted text-xs block">超级管理员 <b
-									class="caret"></b>
+									class="font-bold">admin</strong>
+							</span> <span class="text-muted text-xs block">超级管理员<!--  <b
+									class="caret"></b> -->
 							</span>
 						</span>
 						</a>
-						<ul class="dropdown-menu animated fadeInRight m-t-xs">
-							<li><a class="J_menuItem" href="form_avatar.html">修改头像</a></li>
-							<li><a class="J_menuItem" href="profile.html">个人资料</a></li>
-							<li class="divider"></li>
-							<li><a href="login.html">安全退出</a></li>
-						</ul>
 					</div>
 				</li>
-				<li><a class="J_menuItem" href="index_v3.jsp"> <i
+				<li><a class="J_menuItem" href="servlet/ToIndex"> <i
 						class="fa fa-home"></i> <span class="nav-label">首页</span>
 				</a></li>
-				<li><a class="J_menuItem"> <i
-						class="fa fa-columns"></i> <span class="nav-label">住户管理</span> <span
-						class="fa arrow"></span>
+				<li><a class="J_menuItem"> <i class="fa fa-columns"></i> <span
+						class="nav-label">住户管理</span> <span class="fa arrow"></span>
 				</a>
 					<ul class="nav nav-second-level">
-						<li><a class="J_menuItem" href="servlet/BuildingSearchServlet">住户信息</a></li>
-						<li><a class="J_menuItem" href="addpeople.html"
-							data-index="0">添加用户</a></li>
-						<li><a class="J_menuItem" href="addbulid.html">添加楼栋</a></li>
+						<li><a class="J_menuItem"
+							href="servlet/BuildingSearchServlet">住户信息</a></li>
+						<li><a class="J_menuItem"
+							href="servlet/GetBuildingNumServiet?to=people" data-index="0">添加住户</a></li>
+						<li><a class="J_menuItem" href="servlet/GetBnameServlet">添加楼栋</a></li>
 					</ul></li>
-				<li><a class="J_menuItem" > <i
-						class="fa fa-magic"></i> <span class="nav-label">门禁管理</span> <span
-						class="fa arrow"></span>
+				<li><a class="J_menuItem"> <i class="fa fa-magic"></i> <span
+						class="nav-label">门禁管理</span> <span class="fa arrow"></span>
 				</a>
 					<ul class="nav nav-second-level">
-					<li><a class="J_menuItem" href="camel.html" data-index="0">门禁信息</a>
-						</li>
-						<li><a class="J_menuItem" href="adddoor.html" data-index="0">添加门禁</a>
+						<li><a class="J_menuItem" href="servlet/ToDoorControl"
+							data-index="0">门禁信息</a></li>
+						<li><a class="J_menuItem" href="adddoor.jsp" data-index="0">添加门禁</a>
 						</li>
 
 					</ul></li>
-				<li><a class="J_menuItem" href="timeline.html"> <i
-						class="fa fa-table"></i> <span class="nav-label">进出情况</span>
-				</a></li>
+				<li><a class="J_menuItem"> <i class="fa fa-table"></i> <span
+						class="nav-label">出入管理</span> <span class="fa arrow"></span>
+				</a>
+					<ul class="nav nav-second-level">
+						<li><a class="J_menuItem"
+							href="servlet/GetBuildingNumServiet?to=time" data-index="0">进出情况查询</a></li>
+						<li><a class="J_menuItem" href="servlet/ViewStranger"
+							data-index="0">未认证人员记录</a></li>
 
-				<li><a class="J_menuItem" href="request.html"> <i
-						class="fa fa-envelope"></i> <span class="nav-label">申请情况</span>
+					</ul></li>
+
+				<li><a class="J_menuItem" href="servlet/ToExamine"> <i
+						class="fa fa-envelope"></i> <span class="nav-label">审核管理</span>
 				</a></li>
-				<li><a class="J_menuItem" href="faq.html"> <i
+				<li><a class="J_menuItem" href="faq.jsp"> <i
 						class="fa fa-flask"></i> <span class="nav-label">寻求帮助</span>
 				</a></li>
 
@@ -110,18 +110,9 @@
 				<nav class="navbar navbar-static-top" role="navigation"
 					style="margin-bottom: 0">
 				<div class="navbar-header">
-					<a
-						class="navbar-minimalize minimalize-styl-2 btn btn-primary 
-                        "
-						href="#"> <i class="fa fa-bars"></i>
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-primary ">
+						<i class="fa fa-bars"></i>
 					</a>
-					<form role="search" class="navbar-form-custom" method="post"
-						action="search_results.html">
-						<div class="form-group">
-							<input type="text" placeholder="请输入您需要查找的内容 …"
-								class="form-control" name="top-search" id="top-search">
-						</div>
-					</form>
 				</div>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info"
@@ -203,13 +194,12 @@
 			</div>
 			<div class="row J_mainContent" id="content-main">
 				<iframe class="J_iframe" name="iframe0" width="100%" height="100%"
-					src="index_v3.jsp?v=4.0" frameborder="0" data-id="index_v1.html"
+					src="servlet/ToIndex?v=4.0" frameborder="0" data-id="index_v1.html"
 					seamless></iframe>
 			</div>
 			<div class="footer">
 				<div class="pull-right">
-					&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's
-						blog</a>
+					&copy; 2018 evian
 				</div>
 			</div>
 		</div>

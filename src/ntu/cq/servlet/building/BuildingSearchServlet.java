@@ -57,11 +57,12 @@ public class BuildingSearchServlet extends HttpServlet {
 			Building building = new Building();
 			try {
 				building = bs.getBuilding(str);
+				list.add(building);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			list.add(building);
+			
 		}
 		request.setAttribute("list", list);
 		request.setAttribute("bCount", bCount);

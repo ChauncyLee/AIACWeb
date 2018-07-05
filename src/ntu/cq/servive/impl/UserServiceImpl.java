@@ -1,7 +1,11 @@
 package ntu.cq.servive.impl;
 
+import java.sql.SQLException;
+
 import ntu.cq.bean.PropertyStaff;
+import ntu.cq.bean.Resident;
 import ntu.cq.bean.User;
+import ntu.cq.bean.Visitor;
 import ntu.cq.dao.UserDao;
 import ntu.cq.dao.impl.UserDaoImpl;
 import ntu.cq.servive.UserService;
@@ -29,8 +33,26 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public int getCid(String username) {
+	public PropertyStaff getCid(String username) throws SQLException {
 		return userDao.getCid(username);
+	}
+
+	@Override
+	public int registVisitor(Visitor v) throws SQLException {
+		// TODO Auto-generated method stub
+		return userDao.registVisitor(v);
+	}
+
+	@Override
+	public int registResident(Resident r) throws SQLException {
+		// TODO Auto-generated method stub
+		return userDao.registResident(r);
+	}
+
+	@Override
+	public int getUid(String uname) throws SQLException {
+		// TODO Auto-generated method stub
+		return userDao.getUid(uname);
 	}
 
 }
